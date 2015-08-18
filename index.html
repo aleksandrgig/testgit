@@ -3,10 +3,135 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link href="src/css/style.css" rel="stylesheet" media="all">
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div class="cntent">
-		<h1>Header</h1>
+<div class="container">
+	<header>
+		<div class="logo">
+			<img src="src/img/logo.png" alt="" class="logo">
+		</div>
+		<ul class="main-menu">
+			<li class="inactive">Home</li>
+			<li class="inactive">Portfolio</li>
+			<li class="inactive">About</li>
+			<li class="inactive">Services</li>
+			<li class="inactive">Projects</li>
+			<li class="inactive">Contact</li>
+		</ul>
+	</header>
+	<div class="slider">
+		<img src="src/img/slider.jpg" alt="">
+		<div class="slider-text">
+			<h1>Lorest Nesto Gravido Forum</h1>
+			<p>
+				Duis porta ultrices elit sed consequat. Suspendisse nunc orci, molestie sed mollis nec, facilisis at ligula. Donec ultrices varius lacinia. Pellentesque id tortor non justo consequat pulvinar. 
+			</p>
+		</div>
+		<a href="#" class="button big blue">See More</a>
 	</div>
+	<div class="content">
+		<div class="email-bar">
+			<span>Duis porta ultrices elit sed consequat. Suspendisse nunc orci molestie sed.</span>
+			<form action="#" method="post" id="subscribe-form">
+				<input name="email" type="text" placeholder="Email">
+				<button class="button blue short" type="submit">Submit</button>
+			</form>
+		</div>
+		<div class="columns">
+			<div class="column">
+				<h3><img src="src/img/1.png" alt="" class="h-image">Ultricies Lacinia Pulvin</h3>
+				<p>
+					Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+				</p>
+				<div><a href="#" class="button more">See More</a></div>
+			</div>
+			<div class="column">
+				<h3><img src="src/img/2.png" alt="" class="h-image">Magnust Minima Sed Qui</h3>
+				<p>
+					Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea asekin morir commodi consequatur?
+				</p>
+				<div><a href="#" class="button more">See More</a></div>
+			</div>
+			<div class="column">
+				<h3><img src="src/img/3.png" alt="" class="h-image">Ultricies Lacinia Pulvinar</h3>
+				<p>
+					Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+				</p>
+				<div><a href="#" class="button more">See More</a></div>
+			</div>
+		</div>
+		<div class="columns">
+			<div class="column top-image">
+				<img src="src/img/4.png" alt="" class="h-image">
+				<h3>Magnust Alecet Fernum</h3>
+				<p>
+					Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et.
+				</p>
+			</div>
+			<div class="column top-image">
+				<img src="src/img/5.png" alt="" class="h-image">
+				<h3>Quia Porro Venium</h3>
+				<p>
+					Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et.
+				</p>
+			</div>
+			<div class="column top-image">
+				<img src="src/img/6.png" alt="" class="h-image">
+				<h3>Dolorest Nuwuam Et Lobiare</h3>
+				<p>
+					Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="content">
+			<div class="columns">
+				<div class="column">
+					<h2>About Us</h2>
+					<div class="h-line"></div>
+					<p>
+						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et.
+					</p>
+					<p>
+						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et.
+					</p>
+					<a href="#" class="button in-footer">More</a>
+				</div>
+				<div class="column">
+					<h2>Quick Links</h2>
+					<div class="h-line"></div>
+					<ul>
+						<li>Some Menu Link 1</li>
+						<li>Some Menu Link 2</li>
+						<li>Some Menu Link 3</li>
+						<li>Some Menu Link 4</li>
+						<li>Some Menu Link 5</li>
+						<li>Some Menu Link 6</li>
+					</ul>
+				</div>
+				<div class="column">
+					<h2>Contact Us</h2>
+					<div class="h-line"></div>
+					<form action="#" method="post" id="contact-form">
+						<span class="on-error">Name</span>
+						<input name="name" type="text" placeholder="Name">
+						<span class="on-error">Email</span>
+						<input name="email" type="text" placeholder="Email">
+						<textarea name="message">Your message</textarea>
+						<button class="button in-footer" type="submit">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+		<div class="content">
+			<span>&copy; 2011 PSD Style All Rights Reserved</span>
+		</div>
+	</div>
+</div>
 </body>
 </html>

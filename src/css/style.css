@@ -1,11 +1,360 @@
 /*
 
 A project to test GIT
+Version 1.1
 
 */
 
+
+/* General styles */
+
+html {
+	background-color: #ccc;
+}
 body {
 	font-family: 'arial';
+	font-size: 14px;
+	margin: 0 auto;
+	max-width: 1200px;
+	background-color: #fff;
+	color: #000;
+	text-indent: 0;
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+}
+a, img, h1, h2, h3, h4, h5, h6, header, li, ol, ul, p,
+form, input, textarea, button {
+	position: relative;
 	margin: 0;
 	padding: 0;
+	line-height: 100%;
+	box-sizing: content-box;
+	-webkit-appearance: none;
+	border: none;
+	font-weight: 300;
+}
+input, textarea {
+	box-sizing: border-box;
+	padding: 0 14px;
+}
+header,
+.content {
+	padding: 0 120px 0 118px;
+}
+h1 {
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 26px;
+	font-weight: 900;
+	margin: 0 0 0.6em;
+	color: #fff;
+	text-shadow: 1px 1px 5px rgba(0,0,0,1);
+}
+h2 {
+	font-size: 24px;
+	font-weight: 300;
+	margin: 0 0 1em;
+	color: #fff;
+}
+h3 {
+	font-size: 18px;
+	font-weight: 700;
+	margin: 0 0 0.8em;
+	color: #000;
+}
+.container {
+	overflow: hidden;
+}
+
+
+/* Buttons */
+.button {
+	position: relative;
+	font-family: 'Droid Sans', sans-serif;
+	border-radius: 3px;
+	color: #fff;
+	padding: 0.48em 1.16em 0.48em 1.3em;
+}
+.button.short {
+	font-size: 14px;
+	line-height: 100%;
+	padding: 16px 7px 12px 8px;
+}
+.button.blue {
+	background: #60a9d4;
+	background: linear-gradient(to bottom, #60a9d4, #4290c1);
+}
+.button.big {
+	font-size: 28px;
+}
+.button.more {
+	font-family: 'MyriadPro', sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 450%;
+	color: #1d1d1d;
+	background: #fdfdfd;
+	background: linear-gradient(to bottom, #fdfdfd, #e3e3e3);
+	padding: 10px 8px;
+}
+.button.in-footer {
+	font-family: 'trebuchet', sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 100%;
+	background: #1d8fd5;
+	background: linear-gradient(to bottom, #1d8fd5, #1455ac);
+	padding: 11px 20px 10px;
+	top: 14px;
+}
+
+
+/* Top of page */
+header {
+	background: url(../img/bg.png) repeat #000;
+	height: 68px;
+	z-index: 2;
+	border-bottom: 1px solid #1d1a1b;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
+		 -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
+					box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.logo {
+	float: left;
+	margin: 6px 0 0 0;
+}
+.main-menu {
+	float: right;
+}
+.main-menu li {
+	display: inline-block;
+	list-style-type: none;
+	color: #fff;
+	font-weight: 300;
+	font-size: 18px;
+	margin: 0;
+	padding: 25px 0 25px 23px;
+}
+.slider {
+	position: relative;
+	z-index: 1;
+}
+.slider-text {
+	position: absolute;
+	display: inline-block;
+	font-size: 16px;
+	color: #fff;
+	top: 16.5%;
+	right: 10%;
+	width: 370px;
+}
+.slider-text p {
+	line-height: 166%;
+	letter-spacing: 0.18px;
+}
+.slider .button {
+	position: absolute;
+	right: 18.8%;
+	bottom: 19.1%;
+}
+
+
+/* Content */
+.email-bar {
+	margin: 11px 0 41px;
+	padding: 13px 18px 14px 10px;
+	background: #e9e8e6;
+	background: linear-gradient(to bottom, #e9e8e6, #d1d1d1);
+	border-radius: 3px;
+}
+.email-bar span {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 45px;
+	color: #373737;
+	letter-spacing: -0.55px;
+}
+.email-bar form {
+	float: right;
+	/*display: inline-block;*/
+	color: transparent;
+}
+.email-bar form input {
+	margin-right: 2px;
+	line-height: 42px;
+	background: #fff;
+	border-radius: 4px;
+	width: 246px;
+}
+.email-bar:after {
+	display: table;
+	clear: both;
+	content: " ";
+}
+.h-image {
+	position: relative;
+	display: inline-block;
+	margin: 0 8px 0 0;
+	top: 11px;
+}
+.columns {
+	clear: both;
+	margin: 0 -73px 0 0;
+}
+.column {
+	display: inline-block;
+	vertical-align: top;
+	width: 33%;
+	padding: 0 73px 0 0;
+	margin: 0 0 48px 0;
+	box-sizing: border-box;
+}
+.column > p {
+	line-height: 144%;
+}
+.column > div {
+	vertical-align: bottom;
+	box-sizing: content-box;
+	margin: 10px 0;
+}
+.column.top-image {
+	margin-bottom: 55px;
+}
+.column.top-image .h-image {
+	margin: 0;
+	padding: 6px;
+	top: 0;
+	border-radius: 3px;
+	margin-bottom: 14px;
+	background-color: #e2e0e0;
+}
+.column.top-image h3 {
+	margin-bottom: 0.25em;
+}
+
+
+/* Footer */
+
+.footer,
+.copyright {
+	background: #000;
+	color: #fff;
+}
+.footer {
+	padding: 28px 0 24px;
+	background: url(../img/footer-bg.png) repeat #000;
+}
+.footer .column {
+	margin-bottom: 0;
+}
+.footer h2 {
+	margin-bottom: 8px;
+}
+.footer .h-line {
+	height: 2px;
+	margin: 8px 0 27px;
+}
+.footer .h-line:after {
+	display: block;
+	content: ' ';
+	position: relative;
+	height: 1px;
+	top: 4px;
+}
+.footer .h-line,
+.footer .h-line:after {
+	background-color: #000;
+	-webkit-box-shadow: 1px 1px 0px 0px rgba(255, 255, 255, 0.2);
+	   -moz-box-shadow: 1px 1px 0px 0px rgba(255, 255, 255, 0.2);
+	        box-shadow: 1px 1px 0px 0px rgba(255, 255, 255, 0.2);
+}
+.footer p {
+	margin-bottom: 1.4em;
+}
+.footer ul {
+	margin: 8px 0 0 8px;
+	font-size: 120%;
+	font-weight: 700;
+}
+.footer ul li {
+	list-style-type: none;
+	line-height: 166%;
+	padding: 0 0 5px 10px;
+}
+@font-face {
+	font-family: 'fontello';
+	src: url('../font/fontello.eot?99214994');
+	src: url('../font/fontello.eot?99214994#iefix') format('embedded-opentype'),
+		 url('../font/fontello.woff?99214994') format('woff'),
+		 url('../font/fontello.ttf?99214994') format('truetype'),
+		 url('../font/fontello.svg?99214994#fontello') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.footer ul li:before {
+	position: relative;
+	font-family: "fontello";
+	content: '\e803';
+	font-weight: 100;
+	speak: none;
+ 	display: inline-block;
+	text-decoration: inherit;
+	width: 1em;
+	right: 0.5em;
+	text-align: center;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1em;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+#contact-form input,
+#contact-form textarea {
+	display: inline-block;
+	font-size: 100%;
+	font-weight: 400;
+	width: 70%;
+	height: 33px;
+	border-radius: 16px;
+	border: 1px inset #333;
+	background-color: #111010;
+	margin: 4px 0 3px;
+	padding: 2px 17px;
+}
+#contact-form textarea {
+	font-family: 'arial';
+	font-size: 14px;
+	height: 97px;
+	width: 100%;
+	padding: 9px 17px;
+	margin-bottom: 19px;
+	color: #fff;
+}
+#contact-form input:focus {
+	-webkit-appearance: none;
+	border: none;
+}
+#contact-form button {
+	position: relative;
+	top: 0;
+	left: 8px;
+	padding: 12px 13px 11px;
+}
+#contact-form .on-error {
+	display: none;
+}
+.copyright {
+	font-size: 85%;
+	border-top: 1px solid #4e4949;
+}
+.copyright .content{
+	padding-top: 11px;
+	padding-bottom: 12px;
+}
+.copyright .content span{
+	position: relative;
+	left: -4px;
 }
